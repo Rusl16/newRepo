@@ -1,0 +1,89 @@
+.modal{
+  display: none;
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 105;
+  background-color: rgba(51,49,55,0.75);
+  transition: all 600ms ease;
+  opacity: 0;
+  pointer-events: none;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: scroll;
+  &.in{
+    opacity: 1;
+    pointer-events: all;
+  }
+  .modal-body{
+    padding-left: 90px;
+    padding-right: 90px;
+    .close{
+      color: #B8B8BA;
+      &:hover{
+        color: $black;
+      }
+    }
+  }
+  .slick-slide{
+    background-color: white;
+  }
+  .close{
+    background-color: transparent;
+    position: static;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .btn-red{
+    max-width: 380px;
+  }
+  &-body{
+    opacity: 0;
+    transition: all 300ms;
+    //transform: scale(1.2);
+    &.in{
+      opacity: 1;
+      .vacancy-doc__head{
+        transform: translateY(0);
+      }
+      .vacancy-doc__body{
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.form-modal{
+  .modal-body{
+    padding: 80px;
+    background-color: white;
+    transform: translateY(50px);
+
+    &.in{
+      transform: translateY(0px);
+    }
+
+    @media screen and (max-width: 600px){
+      padding: 40px;
+    }
+
+    input,.bootstrap-select button{
+      background-color: #F5F4F5;
+    }
+  }
+  .dropdown-toggle{
+    padding-left: 30px;
+  }
+  .placeholder{
+    left: 30px;
+  }
+  .btn-red{
+    max-width: 270px;
+  }
+}

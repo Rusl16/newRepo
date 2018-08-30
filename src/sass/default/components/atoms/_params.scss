@@ -1,0 +1,30 @@
+.params{
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 15px;
+  line-height: 15px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  @media screen and (max-width: 991px){
+    &>div{
+      padding-left: 0;
+    }
+  }
+  +.params{
+    border-top: 1px solid #F5F4F5;
+  }
+  &-left{
+    line-height: 22px;
+    color: #B8B8BA;
+    padding-left: 0;
+    @media screen and (max-width: 991px){
+      margin-bottom: 5px;
+    }
+  }
+  &-right{
+    line-height: 22px;
+    p+p{
+      margin-top: 10px!important;
+    }
+  }
+}

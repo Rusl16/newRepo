@@ -1,0 +1,228 @@
+.logo{
+  font-size: 80px;
+  color: $red;
+}
+
+header{
+  padding-top: 40px;
+  @media screen and (max-width: $breakpoint--phablet){
+    padding-top: 0px;
+  }
+}
+
+.header{
+  &__top{
+    position: relative;
+    @media screen and (max-width: 767px){
+      margin-bottom: 40px;
+      padding-top: 60px;
+    }
+    &-call{
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: $grey;
+      font-size: 22px;
+      @media screen and (max-width: 991px){
+        font-size: 16px;
+      }
+      a{
+        color: $black;
+        font-weight: 500;
+        margin-left: 18px;
+        &:hover{
+          opacity: 0.5;
+        }
+      }
+      @media screen and (max-width: 767px){
+        top: 20px;
+        display: none;
+      }
+    }
+  }
+  &__bottom{
+    margin-top: 54px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+
+    @media screen and (max-width: $breakpoint--desktop){
+      &-right{
+        position: relative;
+      }
+      .icon-share2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #E4E4E4;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        color: $black;
+      }
+      .soc-icons{
+        width: 200px;
+        top: 50px;
+        position: absolute;
+        right: 0;
+        pointer-events: none;
+        a{
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+      }
+      &-right.show{
+        .icon-share2{
+          background-color: $black;
+          color: white;
+        }
+        .soc-icons{
+          pointer-events: all;
+          a{
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 767px){
+      display: none;
+    }
+  }
+}
+.show .soc-icons a{
+  &.icon-facebook{
+    transition-delay: 400ms;
+  }
+  &.icon-youtube{
+    transition-delay: 300ms;
+  }
+  &.icon-insta{
+    transition-delay: 200ms;
+  }
+  &.icon-share{
+    transition-delay: 100ms;
+  }
+}
+
+.menu{
+  font-size: 12px;
+  color: $black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  @media screen and (max-width: $breakpoint--tablet) {
+    letter-spacing: 1px;
+  }
+
+    li + li{
+    margin-left: 34px;
+    @media screen and (max-width: $breakpoint--tablet) {
+      margin-left: 20px;
+    }
+  }
+  a{
+    color: $black;
+    font-weight: 500;
+    position: relative;
+    &::before{
+      content: '';
+      height: 1px;
+      position: absolute;
+      background-color: $black;
+      bottom: -2px;
+      left: 0;
+      transition: all 400ms ease;
+      width: 0;
+    }
+    &:hover{
+      color: $dark-red;
+      &::before{
+        width: 100%;
+        background-color: $dark-red;
+      }
+    }
+  }
+}
+
+.mob-menu{
+  display: none;
+}
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width: 767px){
+
+  .hamburger{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    z-index: 10;
+    transition: all 400ms ease;
+    span{
+      width: 22px;
+      height: 2px;
+      background-color: $dark-red;
+      display: block;
+      transition: all 400ms ease;
+      &+span{
+        margin-top: 4px;
+      }
+    }
+    &.active{
+      left: 100%;
+      transform: translateX(-37px);
+      span{
+        &:first-of-type{
+          transform: rotate(45deg) translate(5px, 4px);
+        }
+        &:nth-of-type(2){
+          opacity: 0;
+        }
+        &:last-of-type{
+          transform: rotate(-45deg) translate(4px, -4px);
+        }
+      }
+    }
+  }
+  .mob-menu{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    padding: 20px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 400ms ease;
+    .menu{
+      display: block;
+      margin-bottom: 20px;
+      li{
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+      a{
+        font-size: 16px;
+      }
+    }
+    .soc-icons li{
+      a{
+        margin-left: 0;
+      }
+      &+ li a{
+        margin-left: 20px;
+      }
+    }
+    &.active{
+      pointer-events: all;
+      opacity: 1;
+    }
+  }
+}

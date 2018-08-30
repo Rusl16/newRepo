@@ -1,0 +1,55 @@
+.pagination-page{
+  font-size: 14px;
+  @media screen and (max-width: 767px){
+    justify-content: center;
+  }
+
+  span{
+    padding-left: 20px;
+    padding-right: 20px;
+    @media screen and (max-width: 384px){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .curr-page{
+    border: 1px solid #E4E4E4;
+    color: $dark-red;
+    line-height: 14px;
+    font-weight: 400;
+  }
+
+  .next-page .caret{
+    border-top: 4px solid transparent;
+    border-left: 4px solid;
+    border-bottom: 4px solid transparent;
+    border-right: 0;
+  }
+  .disable.next-page .caret{
+    border-left-color:#B8B8BA
+  }
+  .prev-page .caret{
+    border-top: 4px solid transparent;
+    border-right: 4px solid;
+    border-bottom: 4px solid transparent;
+    border-left: 0;
+  }
+  .disable.prev-page .caret{
+    border-right-color:#B8B8BA
+  }
+}
+
+@media screen and (max-width: 1199px){
+  .pagination-btm{
+    margin-top: 15px;
+    .btn-type{
+      margin-bottom: 25px;
+    }
+    &>*{
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,228 @@
+.rieltor-block{
+  background-image: url("../img/rieltor-bg.jpg");
+  background-size: cover;
+  background-position:left center;
+  &>div{
+    width: 50%;
+    @media screen and (max-width: 767px){
+      width: 100%;
+    }
+  }
+  &__left{
+    position: relative;
+    padding: 60px 40px;
+    border-right: 1px solid white;
+    @media screen and (max-width: $breakpoint--tablet) and (min-width: 768px){
+      display: block;
+    }
+    @media screen and (max-width: 500px){
+      display: block;
+    }
+    @media screen and (max-width: 767px){
+      border-right: none;
+      border-bottom: 1px solid white;
+    }
+    @media screen and (max-width: 500px){
+      padding: 30px 15px;
+    }
+    &::before,&::after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      position: absolute;
+      right: 0;
+    }
+    &::before{
+      top: 0;
+      border-top: 10px solid white;
+      transform: translateX(50%);
+      @media screen and (max-width: 767px){
+        border-top-color: transparent;
+        border-left-color: white;
+        border-right:none;
+        border-bottom:10px solid transparent;
+        top: 100%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+    &::after{
+      bottom: 0;
+      border-bottom: 10px solid white;
+      transform: translateX(50%);
+      @media screen and (max-width: 767px){
+        border-top:10px solid  transparent;
+        border-right-color: white;
+        border-left:none;
+        border-bottom:10px solid transparent;
+        top: 100%;
+        bottom: auto;
+        right: 0;
+        transform: translateY(-50%);
+      }
+    }
+    .img{
+      right: 40px;
+      width: 100px;
+      height: auto;
+      min-width: 100px;
+      overflow: hidden;
+      border: 5px solid white;
+      align-self: flex-start;
+      border-radius: 100%;
+      &.img-mod{
+        border-radius: 0;
+        width: 200px;
+        @media screen and (max-width: 1199px) and (min-width: 992px){
+          width: 150px;
+        }
+      }
+      @media screen and (max-width: 400px){
+        margin-top: 40px;
+      }
+      img{
+        display: block;
+      }
+    }
+    .info__wrap{
+      padding-left: 20px;
+      @media screen and (max-width: $breakpoint--desktop) {
+        padding-left: 20px;
+      }
+      @media screen and (max-width: $breakpoint--tablet) and (min-width: 768px) {
+        padding-left: 0;
+        padding-top: 20px;
+      }
+      @media screen and (max-width: 500px){
+        padding-left: 0;
+        padding-top: 20px;
+      }
+    }
+    .soc-icons li:first-of-type a{
+      margin-left: 0;
+    }
+  }
+  &__right{
+    padding: 60px 40px;
+    @media screen and (max-width: 500px){
+      padding: 30px 15px;
+    }
+
+    .btn-red{
+      max-width: 100%;
+      @media screen and (max-width: 500px){
+
+      }
+    }
+  }
+  &__small{
+    margin-top: 60px;
+    >div{
+      width: 100%;
+    }
+    .rieltor-block__left{
+      border-right: none;
+      border-bottom: 1px solid white;
+      padding: 40px;
+      @media screen and (max-width: 767px){
+        padding: 20px;
+      }
+      &::before{
+        border-top-color: transparent;
+        border-left-color: white;
+        border-right:none;
+        border-bottom:10px solid transparent;
+        top: 100%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+      &::after{
+        border-top:10px solid  transparent;
+        border-right-color: white;
+        border-left:none;
+        border-bottom:10px solid transparent;
+        top: 100%;
+        bottom: auto;
+        right: 0;
+        transform: translateY(-50%);
+      }
+    }
+    .rieltor-block__right{
+      padding: 40px 40px 60px;
+      @media screen and (max-width: 767px){
+        padding: 20px 20px 30px;
+      }
+    }
+    .link-to-page{
+      color: #8F2853;
+      i{
+        color: #8F2853;
+      }
+      &:hover i{
+        color: #a19cad;
+      }
+    }
+  }
+}
+
+.rieltor{
+  &-location{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    color: $dark-red;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    i{
+      color: #E4E4E4;
+      padding-right: 2px;
+    }
+    @media screen and (max-width: 400px){
+      right: auto;
+      left: 20px;
+      top: 30px;
+    }
+  }
+}
+
+.team-img{
+  display: block;
+}
+
+.director{
+  background-color: #F5F4F5;
+}
+
+.filial-team{
+  >div+div{
+    margin-top: 20px;
+  }
+  .vacancy-col{
+    @media screen and (max-width: 1199px) and (min-width: 991px){
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  .rieltor-block__small .btn-red{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 340px){
+  .row-info .phones{
+    display: block;
+    a~a{
+      margin-top: 10px;
+    }
+    span{
+      display: none;
+    }
+  }
+}

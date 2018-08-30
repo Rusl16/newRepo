@@ -1,0 +1,106 @@
+footer{
+  background-image: url("../img/footer_texture.jpg");
+  background-size: cover;
+  background-color: center top;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.footer{
+  @media screen and (max-width: $breakpoint--tablet){
+    .col-xs-12{
+      text-align: center;
+    }
+  }
+  &-logo{
+    font-size: 80px;
+    color: #A71F53;
+  }
+  &-col{
+    h3{
+      font-weight: 500;
+      line-height: 26px;
+    }
+    a{
+      font-size: 15px;
+      color: $black;
+      &:hover{
+        color: $dark-red;
+      }
+    }
+    ul{
+      margin-top: 40px;
+      li{
+        line-height: 40px;
+      }
+    }
+    @media screen and (max-width: $breakpoint--tablet){
+      margin-top: 30px;
+      ul{
+        margin-top: 10px;
+      }
+    }
+    @media screen and (max-width: $breakpoint--phablet){
+      &__mob{
+        text-align: right;
+      }
+    }
+
+    .soc-icons{
+      a{
+        color: $black;
+      }
+      li a{
+        margin-left: 0;
+      }
+      li+li a{
+        margin-left: 10px;
+      }
+      @media screen and (max-width: $breakpoint--tablet){
+        li{
+          width: 35%;
+          &:nth-of-type(n + 3){
+            margin-top: 10px;
+          }
+        }
+      }
+      @media screen and (max-width: $breakpoint--phablet){
+
+          margin-top: 30px;
+          max-width: 500px;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+
+        li{
+          text-align: center;
+          width: 25%;
+          margin-top: 0!important;
+          a{
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+  &-info{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    .produced{
+      color: $black;
+      opacity: 0.2;
+    }
+    @media screen and (max-width: $breakpoint--tablet){
+      display: block;
+      text-align: center;
+      .produced{
+        margin-top: 20px;
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+//@font-face {
+//  font-family: 'ProximaNova';
+//  src: url('../fonts/proximanova-bold.eot'),
+//  url('../fonts/proximanova-bold.woff?1') format('woff'),
+//  url('../fonts/proximanova-bold.ttf') format('truetype'),
+//  url('../fonts/proximanova-bold.svg#proximanova-bold') format('svg'),
+//  url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype');
+//  font-weight: 700;
+//  font-style: normal;
+//}
+
+@font-face {
+  font-family: 'Pfd';
+  src: url('../fonts/pfdintextpro-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pfd';
+  src: url('../fonts/pfdintextpro-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pfd';
+  src: url('../fonts/pfdintextpro-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?fwtago');
+  src:  url('../fonts/icomoon.eot?fwtago#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?fwtago') format('truetype'),
+  url('../fonts/icomoon.woff?fwtago') format('woff'),
+  url('../fonts/icomoon.svg?fwtago#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-area:before {
+  content: "\e900";
+  color: #b8b8ba;
+}
+.icon-facebook:before {
+  content: "\e901";
+}
+.icon-insta:before {
+  content: "\e902";
+}
+.icon-youtube:before {
+  content: "\e903";
+}
+.icon-arrow_down-small:before {
+  content: "\e955";
+}
+.icon-arrow_right:before {
+  content: "\e956";
+}
+.icon-arrow_left:before {
+  content: "\e904";
+}
+.icon-arrow_right-long:before {
+  content: "\e957";
+}
+.icon-arrow_right-small:before {
+  content: "\e958";
+}
+.icon-compare:before {
+  content: "\e959";
+}
+.icon-heart:before {
+  content: "\e95a";
+}
+.icon-logo-header:before {
+  content: "\e95b";
+}
+.icon-plane:before {
+  content: "\e95c";
+}
+.icon-room:before {
+  content: "\e95e";
+}
+.icon-search:before {
+  content: "\e95f";
+}
+.icon-share:before {
+  content: "\e960";
+}
+.icon-call:before {
+  content: "\e905";
+}
+.icon-filial:before {
+  content: "\e906";
+}
+.icon-place:before {
+  content: "\e907";
+}
+.icon-hand:before {
+  content: "\e908";
+}
+.icon-close:before {
+  content: "\e909";
+}
+.icon-play:before {
+  content: "\e90a";
+}
+.icon-location:before {
+  content: "\e90b";
+}
+.icon-edit:before {
+  content: "\e90c";
+}
+.icon-heart-fill:before {
+  content: "\e90d";
+}
+.icon-plus:before {
+  content: "\e95d";
+}
+.icon-zastr:before {
+  content: "\e90e";
+}
+.icon-plan:before {
+  content: "\e90f";
+}
+.icon-deadline:before {
+  content: "\e910";
+}
+.icon-couple-bed:before {
+  content: "\e911";
+}
+.icon-addr:before {
+  content: "\e912";
+}
+.icon-mail:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-viber:before {
+  content: "\e914";
+  color: #fff;
+}
+.icon-telegram:before {
+  content: "\e915";
+  color: #fff;
+}
+.icon-messenger:before {
+  content: "\e916";
+  color: #fff;
+}
+.icon-share2:before {
+  content: "\e938";
+}
+
+
+
+

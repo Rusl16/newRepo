@@ -1,0 +1,25 @@
+.breadcrumbs{
+  justify-content: flex-end!important;
+  @media screen and (max-width: 767px) {
+    flex-direction: row!important;
+    margin-top: 15px;
+    justify-content: flex-start!important;
+  }
+  a{
+    line-height: 14px;
+    font-size: 14px;
+    color: $black;
+    margin-right: 8px;
+    &:hover{
+      color: $dark-red;
+    }
+  }
+  span{
+    line-height: 14px;
+    color: #B8B8BA;
+  }
+  i{
+    margin-right: 8px;
+    font-style: normal;
+  }
+}

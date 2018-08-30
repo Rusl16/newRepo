@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="dist/css/app.min.css">
+    <link rel="stylesheet" href="dist/css/slider.css">
+</head>
+<body class="no-scroll">
+<style>
+    .preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(dist/img/loading@2x.jpg) center center no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999999;
+    }
+    .logo-preloader {
+        text-align: center;
+    }
+    .loading {
+        width: 170px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.35);
+        position: relative;
+        margin-top: 18px;
+    }
+    .loading.load span {
+        max-width: 100%;
+    }
+    .loading span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-width: 0;
+        -webkit-transition: all 1500ms;
+        -moz-transition: all 1500ms;
+        -ms-transition: all 1500ms;
+        -o-transition: all 1500ms;
+        transition: all 1500ms;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+</style>
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="logo-preloader">
+                <img src="dist/img/logo-load.svg" alt="">
+            </div>
+            <div class="loading">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <header class="container">
+        <a  href="" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div id="menu-mob" class="mob-menu">
+            <ul class="header__bottom-left menu flex-row">
+                <li><a href="/">Главная</a></li>
+                <li><a href="catalog.html">Каталог Объектов</a></li>
+                <li><a href="novostroi.html">Новострои</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="career.html">Карьeра</a></li>
+                <li><a href="franchise.html">Франшиза</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header__bottom-right">
+                <a href="" class="hidden icon-share2"></a>
+                <ul class="soc-icons flex-row">
+                    <li><a href="" class="icon-facebook"></a></li>
+                    <li><a href="" class="icon-youtube"></a></li>
+                    <li><a href="" class="icon-insta"></a></li>
+                    <li><a href="" class="icon-share"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__top text-center">
+            <div class="header__card">
+                <ul class="card-list">
+                    <li class="favorite-card">
+                        <a href="favourites.html" class="has-val icon-">
+                            <span>Избранное - 1</span>
+                        </a>
+                    </li>
+                    <li class="compare-card">
+                        <a href="compare.html" class="icon-">
+                            <span>Сравнение - 0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="logo icon-logo-header"></a>
+            <div class="header__top-call">
+                <span>Отдел продаж</span>
+                <a href="">048 700-66-44</a>
+                <i class="icon-call"></i>
+            </div>
+        </div>
+        <div class="header__bottom flex-row v-justified">
+            <ul class="header__bottom-left menu flex-row wow fadeIn" data-wow-durarion="1.6s" data-wow-delay="100ms">
+                <li><a href="/">Главная</a></li>
+                <li><a href="catalog.html">Каталог Объектов</a></li>
+                <li><a href="novostroi.html">Новострои</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="career.html">Карьeра</a></li>
+                <li><a href="franchise.html">Франшиза</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header__bottom-right wow fadeInRight" data-wow-durarion="1s" data-wow-delay="150ms">
+                <a href="" class="hidden icon-share2"></a>
+                <ul class="soc-icons flex-row">
+                    <li><a href="" class="icon-facebook"></a></li>
+                    <li><a href="" class="icon-youtube"></a></li>
+                    <li><a href="" class="icon-insta"></a></li>
+                    <li><a href="" class="icon-share"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="section-block hero hero-home filter-full">
+            <div class="filter-full__top open row-small flex-row">
+                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 col-small wow hero-left fadeInLeft" data-wow-durarion="1.6s" data-wow-delay="150ms">
+                    <form action="">
+                        <div id="home-filter-top" class="hero-filter p-40">
+                            <div class="select-row choose-type input-row">
+                                <div class="placeholder">Тип недвижимости</div>
+                                <select name="" id="">
+                                    <option value="secondary">Квартира Вторичка</option>
+                                    <option value="new-building">Квартира Новострой</option>
+                                    <option value="houses">Дома, дачи</option>
+                                    <option value="sector">Участок</option>
+                                    <option value="commerce">Коммерция</option>
+                                    <option value="rent">Аренда</option>
+                                </select>
+                            </div>
+                            <div class="select-row input-row mt-15">
+                                <div class="placeholder">Район</div>
+                                <select name="" id="">
+                                    <option value="">Приморский р-н</option>
+                                    <option value="">Суворовский р-н</option>
+                                    <option value="">Киевский р-н</option>
+                                </select>
+                            </div>
+                            <div data-id="secondary" class="type-result input-row mt-15">
+                                <div class="placeholder">Стоимость</div>
+                                <div class="slide-values flex-row sp-bw">
+                                    <!--<div class="text-left"></div>-->
+                                    <div class="price-slide text-left max-price">$<span>50000</span></div>
+                                </div>
+                                <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                            </div>
+                            <div data-id="new-building" class="type-result hidden input-row mt-15">
+                                <div class="placeholder">Стоимость</div>
+                                <div class="slide-values flex-row">
+                                    <div class="price-slide text-left max-price">$<span>30000</span></div>
+                                </div>
+                                <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                            </div>
+                            <div data-id="houses" class="type-result hidden input-row mt-15">
+                                <div class="placeholder">Стоимость</div>
+                                <div class="slide-values flex-row sp-bw">
+                                    <div class="price-slide text-left max-price">$<span>50000</span></div>
+                                </div>
+                                <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                            </div>
+                            <div data-id="sector" class="type-result hidden input-row mt-15">
+                                <div class="placeholder">Стоимость</div>
+                                <div class="slide-values flex-row sp-bw">
+                                    <div class="price-slide text-left max-price">$<span>50000</span></div>
+                                </div>
+                                <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                            </div>
+                            <div data-id="commerce" class="type-result hidden input-row mt-15">
+                                <div class="placeholder">Стоимость</div>
+                                <div class="slide-values flex-row sp-bw">
+                                    <div class="price-slide text-left max-price">$<span>50000</span></div>
+                                </div>
+                                <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                            </div>
+                            <div data-id="rent" class="type-result hidden input-row mt-15">
+                                <div class="placeholder">Стоимость</div>
+                                <div class="slide-values flex-row sp-bw">
+                                    <div class="text-left">за месяц</div>
+                                    <div class="price-slide text-right max-price">$<span>50000</span></div>
+                                </div>
+                                <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                            </div>
+                            <div class="text-center pt-30">
+                                <button type="submit" class="btn-type btn-bordered btn-search"><span><i class="icon-search"></i>Поиск</span></button>
+                            </div>
+                            <div class="hero-filter__more">
+                                <a href="" class="open-filter-home">
+                                    Расширенный Поиск
+                                    <div class="flex-row caret-rows">
+                                        <span class="caret anim"></span>
+                                        <span class="caret anim"></span>
+                                        <span class="caret anim"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12 col-small hero-right wow fadeInRight" data-wow-durarion="1.8s" data-wow-delay="150ms">
+                    <!--<div class="hero__slider swiper-container">-->
+                        <!--<div class="swiper-wrapper">-->
+                            <!--<div class="hero-slider swiper-slide">-->
+                                <!--<div class="block">-->
+                                    <!--<img src="dist/img/banner-img.jpg" alt="">-->
+                                    <!--<h3 class="h2 title-wh text-center">Дом на Французском бульваре, 29</h3>-->
+                                    <!--<div class="text-center pt-40">-->
+                                        <!--<a href="" class="btn-type btn-load-more"><i class="icon-plus"></i>Подробнее</a>-->
+                                    <!--</div>-->
+                                    <!--<span class="short-info">от $2,000 за 1 м<sup>2</sup></span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="hero-slider swiper-slide">-->
+                                <!--<div class="block">-->
+                                    <!--<img src="dist/img/banner-img.jpg" alt="">-->
+                                    <!--<h3 class="h2 title-wh text-center">Дом на Французском бульваре, 40</h3>-->
+                                    <!--<div class="text-center pt-40">-->
+                                        <!--<a href="" class="btn-type btn-load-more"><i class="icon-plus"></i>Подробнее</a>-->
+                                    <!--</div>-->
+                                    <!--<span class="short-info">от $4,000 за 1 м<sup>2</sup></span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="slide-prev icon-arrow_left slick-arrow"></div>-->
+                        <!--<div class="slide-next icon-arrow_right slick-arrow"></div>-->
+                    <!--</div>-->
+                    <div id="app" class="hero__slider"></div>
+                </div>
+            </div>
+            <div data-id="home-filter-bottom" class="filter-full__bottom row-small p-40 flex-row clearfix">
+                <div class="col-md-6 col-sm-12 flex-row">
+                    <div class="select-row choose-type input-row">
+                        <div class="placeholder">Тип недвижимости</div>
+                        <select name="" id="">
+                            <option value="secondary">Квартира Вторичка</option>
+                            <option value="new-building">Квартира Новострой</option>
+                            <option value="houses">Дома, дачи</option>
+                            <option value="sector">Участок</option>
+                            <option value="commerce">Коммерция</option>
+                            <option value="rent">Аренда коммерческой</option>
+                        </select>
+                    </div>
+                    <div class="select-row input-row">
+                        <div class="placeholder">Область</div>
+                        <select name="" id="">
+                            <option value="">Одесская</option>
+                            <option value="">Киевская</option>
+                            <option value="">Львовская</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 flex-row">
+                    <div class="select-row input-row">
+                        <div class="placeholder">Областной район</div>
+                        <select name="" id="">
+                            <option value="">Приморский р-н</option>
+                            <option value="">Суворовский р-н</option>
+                            <option value="">Киевский р-н</option>
+                        </select>
+                    </div>
+                    <div class="select-row input-row">
+                        <div class="placeholder">Район</div>
+                        <select name="" id="">
+                            <option value="">Приморский р-н</option>
+                            <option value="">Суворовский р-н</option>
+                            <option value="">Киевский р-н</option>
+                        </select>
+                    </div>
+                </div>
+                <div data-id="secondary" class="type-result"> <!--Вторичка-->
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="select-row input-row">
+                            <div class="placeholder">Населенный пункт</div>
+                            <select name="" id="">
+                                <option value="">с. Мизикевича</option>
+                                <option value="">с. Мизикевича 1</option>
+                                <option value="">с. Мизикевича 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Стоимость</div>
+                            <div class="slide-values flex-row sp-bw">
+                                <div class="price-slide text-left max-price">$<span>50000</span></div>
+                            </div>
+                            <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Площадь</div>
+                            <div class="slide-values flex-row">
+                                <div class="price-slide min-price"><span>25</span> м2</div>
+                                <div class="text-center"></div>
+                                <div class="price-slide text-right max-price"><span>150</span> м2</div>
+                            </div>
+                            <input type="text" class="span1" value="" data-slider-min="25" data-slider-max="150" data-slider-step="1" data-slider-tooltip="hide" data-slider-value="[25,150]"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15 ">
+                        <div class="input-row">
+                            <div class="placeholder">Комнатность</div>
+                            <div class="checkbox-wrap flex-row">
+                                <label for="all">
+                                    <input name="rooms" type="checkbox" id="all">
+                                    <span>Все</span>
+                                </label>
+                                <label for="room1">
+                                    <input name="rooms" type="checkbox" id="room1">
+                                    <span>1</span>
+                                </label>
+                                <label for="room2">
+                                    <input name="rooms" type="checkbox" id="room2">
+                                    <span>2</span>
+                                </label>
+                                <label for="room3">
+                                    <input name="rooms" type="checkbox" id="room3">
+                                    <span>3</span>
+                                </label>
+                                <label for="room4">
+                                    <input name="rooms" type="checkbox" id="room4">
+                                    <span>4+</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="new-building" class="type-result hidden"> <!--Новострои-->
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="select-row input-row">
+                            <div class="placeholder">Населенный пункт</div>
+                            <select name="" id="">
+                                <option value="">с. Мизикевича</option>
+                                <option value="">с. Мизикевича 1</option>
+                                <option value="">с. Мизикевича 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Стоимость</div>
+                            <div class="slide-values flex-row">
+                                <div class="price-slide text-left max-price">$<span>50000</span></div>
+                            </div>
+                            <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6  flex-row mt-15">
+                        <div class="select-row input-row">
+                            <div class="placeholder">Жилой Комплекс</div>
+                            <select name="" id="">
+                                <option value="">Альтаир 1</option>
+                                <option value="">Альтаир 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 flex-row mt-15">
+                        <div class="select-row input-row">
+                            <div class="placeholder">Застройщик</div>
+                            <select name="" id="">
+                                <option value="">Все</option>
+                                <option value="">Не все</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="houses" class="type-result hidden"> <!--Дома, Дачи-->
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="select-row input-row">
+                            <div class="placeholder">Населенный пункт</div>
+                            <select name="" id="">
+                                <option value="">с. Мизикевича</option>
+                                <option value="">с. Мизикевича 1</option>
+                                <option value="">с. Мизикевича 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Стоимость</div>
+                            <div class="slide-values flex-row sp-bw">
+                                <div class="price-slide text-left max-price">$<span>50000</span></div>
+                            </div>
+                            <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Площадь</div>
+                            <div class="slide-values flex-row">
+                                <div class="price-slide min-price"><span>25</span> м2</div>
+                                <div class="text-center"></div>
+                                <div class="price-slide text-right max-price"><span>150</span> м2</div>
+                            </div>
+                            <input type="text" class="span1" value="" data-slider-min="25" data-slider-max="150" data-slider-step="1" data-slider-tooltip="hide" data-slider-value="[25,150]"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Сотки</div>
+                            <div class="slide-values flex-row">
+                                <div class="price-slide min-price"><span>25</span></div>
+                                <div class="text-center"></div>
+                                <div class="price-slide text-right max-price"><span>150</span></div>
+                            </div>
+                            <input type="text" class="span1" value="" data-slider-min="25" data-slider-max="150" data-slider-step="1" data-slider-tooltip="hide" data-slider-value="[25,150]"/>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="sector" class="type-result hidden"> <!-- Участок-->
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="select-row input-row">
+                            <div class="placeholder">Населенный пункт</div>
+                            <select name="" id="">
+                                <option value="">с. Мизикевича</option>
+                                <option value="">с. Мизикевича 1</option>
+                                <option value="">с. Мизикевича 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Стоимость</div>
+                            <div class="slide-values flex-row sp-bw">
+                                <div class="price-slide text-left max-price">$<span>50000</span></div>
+                            </div>
+                            <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Сотки</div>
+                            <div class="slide-values flex-row">
+                                <div class="price-slide min-price"><span>25</span></div>
+                                <div class="text-center"></div>
+                                <div class="price-slide text-right max-price"><span>150</span></div>
+                            </div>
+                            <input type="text" class="span1" value="" data-slider-min="25" data-slider-max="150" data-slider-step="1" data-slider-tooltip="hide" data-slider-value="[25,150]"/>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="commerce" class="type-result hidden"> <!-- Коммерция-->
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="select-row input-row">
+                            <div class="placeholder">Населенный пункт</div>
+                            <select name="" id="">
+                                <option value="">с. Мизикевича</option>
+                                <option value="">с. Мизикевича 1</option>
+                                <option value="">с. Мизикевича 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Стоимость</div>
+                            <div class="slide-values flex-row sp-bw">
+                                <div class="price-slide text-left max-price">$<span>50000</span></div>
+                            </div>
+                            <input  type="text" class="span3" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="30000"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 flex-row mt-15">
+                        <div class="select-row input-row">
+                            <div class="placeholder">Тип</div>
+                            <select name="" id="">
+                                <option value="">Тип 1</option>
+                                <option value="">Тип 2</option>
+                                <option value="">Тип 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Площадь</div>
+                            <div class="slide-values flex-row">
+                                <div class="price-slide min-price"><span>25</span> м2</div>
+                                <div class="text-center"></div>
+                                <div class="price-slide text-right max-price"><span>150</span> м2</div>
+                            </div>
+                            <input type="text" class="span1" value="" data-slider-min="25" data-slider-max="150" data-slider-step="1" data-slider-tooltip="hide" data-slider-value="[25,150]"/>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="rent" class="type-result hidden"> <!-- Аренда-->
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="select-row input-row">
+                            <div class="placeholder">Населенный пункт</div>
+                            <select name="" id="">
+                                <option value="">с. Мизикевича</option>
+                                <option value="">с. Мизикевича 1</option>
+                                <option value="">с. Мизикевича 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Стоимость</div>
+                            <div class="slide-values flex-row sp-bw">
+                                <div class="text-left">за месяц</div>
+                                <div class="price-slide text-right max-price">$<span>50000</span></div>
+                            </div>
+                            <input type="text" class="span1" value="" data-slider-min="20000" data-slider-max="50000" data-slider-step="100" data-slider-tooltip="hide" data-slider-value="[20000,50000]"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 flex-row mt-15">
+                        <div class="select-row input-row">
+                            <div class="placeholder">Тип</div>
+                            <select name="" id="">
+                                <option value="">Тип 1</option>
+                                <option value="">Тип 2</option>
+                                <option value="">Тип 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mt-15">
+                        <div class="input-row">
+                            <div class="placeholder">Площадь</div>
+                            <div class="slide-values flex-row">
+                                <div class="price-slide min-price"><span>25</span> м2</div>
+                                <div class="text-center"></div>
+                                <div class="price-slide text-right max-price"><span>150</span> м2</div>
+                            </div>
+                            <input type="text" class="span1" value="" data-slider-min="25" data-slider-max="150" data-slider-step="1" data-slider-tooltip="hide" data-slider-value="[25,150]"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-15">
+                    <div class="text-center">
+                        <button type="submit" class="btn-type btn-bordered btn-search fs-10"><span><i class="icon-search"></i>Поиск</span></button>
+                    </div>
+                </div>
+                <div class="filter__more">
+                    <a href="" class="open-filter-home flex-row v-justified h-justified">
+                        <div class="flex-row caret-rows">
+                            <span class="caret anim"></span>
+                            <span class="caret anim"></span>
+                            <span class="caret anim"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="title-row">
+                <div class="flex-row">
+                    <h2 class="title-bl wow fadeIn" data-wow-durarion="1s" data-wow-delay="1s">Типы Недвижимости</h2>
+                    <a href="" class="link-to-page wow fadeInRight" data-wow-durarion="1.6s" data-wow-delay="1s"><i class="icon-arrow_right-long"></i>Перейти В Каталог</a>
+                </div>
+            </div>
+            <div class="row-small clearfix">
+                <div class="block-col col-md-4 col-sm-4 col-xs-12 col-small">
+                    <div class="block-padding block-half wow fadeInDown" data-wow-durarion="1s" data-wow-delay="200ms">
+                        <a href="catalog.html" class="block">
+                            <img src="dist/img/second-img.jpg" alt="">
+                            <h3 class="h2 title-wh text-center">Вторичный Рынок</h3>
+                            <span class="short-info">2,576 объектов</span>
+                        </a>
+                    </div>
+                    <div class="block-padding block-half wow fadeInLeft" data-wow-durarion="1s" data-wow-delay="500ms">
+                        <a href="card-house.html" class="block ">
+                            <img src="dist/img/house-img.jpg" alt="">
+                            <h3 class="h2 title-wh text-center">Дома, Дачи</h3>
+                            <span class="short-info">2,576 объектов</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="block-col block-col__mob col-md-4 col-sm-4 col-xs-12 col-small wow fadeInUp" data-wow-durarion="1s" data-wow-delay="350ms">
+                    <div class="block-padding">
+                        <a href="novostroi.html" class="block">
+                            <img src="dist/img/new-img.jpg" alt="">
+                            <h3 class="h2 title-wh text-center">Новострои</h3>
+                            <span class="short-info">2,576 объектов</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="block-col col-md-4 col-sm-4 col-xs-12 col-small">
+                    <div class="block-padding block-half wow fadeInUp" data-wow-durarion="1s" data-wow-delay="600ms">
+                        <a href="" class="block">
+                            <img src="dist/img/commer-img.jpg" alt="">
+                            <h3 class="h2 title-wh text-center">Коммерция</h3>
+                            <span class="short-info">2,576 объектов</span>
+                        </a>
+                    </div>
+                    <div class="block-padding block-half wow fadeInRight" data-wow-durarion="1s" data-wow-delay="400ms">
+                        <a href="card-land.html" class="block">
+                            <img src="dist/img/lands-img.jpg" alt="">
+                            <h3 class="h2 title-wh text-center">Участки</h3>
+                            <span class="short-info">2,576 объектов</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="title-row">
+                <div class="flex-row">
+                    <h2 class="title-bl wow fadeIn" data-wow-durarion="1s">Новострои без комиссии</h2>
+                    <a href="novostroi.html" class="link-to-page wow fadeInRight" data-wow-durarion="1s"><i class="icon-arrow_right-long"></i>Смотреть Все</a>
+                </div>
+                <p class="wow fadeIn" data-wow-durarion="1s">Официальный партнер лучших новостроев города Одесса</p>
+            </div>
+            <form action="">
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="100ms">
+                        <div class="card">
+                            <a href="novostroi-card.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">от $2,000 за 1м2</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="200ms">
+                        <div class="card">
+                            <a href="novostroi-card.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">от $2,000 за 1м2</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="300ms">
+                        <div class="card">
+                            <a href="novostroi-card.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">от $2,000 за 1м2</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="300ms">
+                        <div class="card">
+                            <a href="novostroi-card.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">от $2,000 за 1м2</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="200ms">
+                        <div class="card">
+                            <a href="novostroi-card.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">от $2,000 за 1м2</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="100ms">
+                        <div class="card">
+                            <a href="novostroi-card.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">от $2,000 за 1м2</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="300ms">
+                        <div class="card">
+                            <a href="novostroi-card.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">от $2,000 за 1м2</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="200ms">
+                        <div class="card">
+                            <a href="novostroi-card.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">от $2,000 за 1м2</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-40">
+                    <a href="" class="btn-type btn-load-more"><i class="icon-plus"></i>Загрузить еще</a>
+                </div>
+            </form>
+        </section>
+        <section class="section-block section-action">
+            <div class="flex-row">
+                <div class="slider-half owl-slider">
+                    <div class="slider-item">
+                        <img src="dist/img/half-img.png" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="dist/img/half-img.png" alt="">
+                    </div>
+                </div>
+                <div class="countdown flex-row v-justified">
+                    <div class="countdown__inner">
+                        <p class="wow fadeInDown" data-wow-durarion="1s">Акционная цена за м2</p>
+                        <h2 class="wow fadeIn" data-wow-durarion="1s" data-wow-delay="100ms">ЖК Корфу</h2>
+                        <div class="flex-row wow fadeInRight" data-wow-durarion="1s" data-wow-delay="100ms">
+                            <div class="countdown__numb flex-row">
+                                <div class="numb">
+                                    <span>32</span>
+                                    <p>часа</p>
+                                </div>
+                                <div class="numb">
+                                    <span>32</span>
+                                    <p>минут</p>
+                                </div>
+                                <div class="numb">
+                                    <span>32</span>
+                                    <p>секунд</p>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price-old">$1,200</div>
+                                <div class="price-new">$950</div>
+                            </div>
+                        </div>
+                        <div class="pt-40">
+                            <a href="" class="btn-type btn-load-more clr-white"><i class="icon-plus"></i>Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="title-row">
+                <div class="flex-row">
+                    <h2 class="title-bl wow fadeIn" data-wow-durarion="1s">Эксклюзивные Предложения</h2>
+                    <a href="catalog.html" class="link-to-page wow fadeInRight" data-wow-durarion="1s" data-wow-delay="100ms"><i class="icon-arrow_right-long"></i>Перейти В Каталог</a>
+                </div>
+            </div>
+            <form action="">
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="100ms">
+                        <div class="card card-mod">
+                            <a href="card-flat.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">$68,000</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                            <div class="rooms-info flex-row">
+                                <div class="square"><i class="icon-area"></i> 62 m<sup>2</sup></div>
+                                <div class="room"><i class="icon-room"></i> 3 комнаты</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="200ms">
+                        <div class="card card-mod">
+                            <a href="card-flat.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">$68,000</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                            <div class="rooms-info flex-row">
+                                <div class="square"><i class="icon-area"></i> 62 m<sup>2</sup></div>
+                                <div class="room"><i class="icon-room"></i> 3 комнаты</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="300ms">
+                        <div class="card card-mod">
+                            <a href="card-flat.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">$68,000</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                            <div class="rooms-info flex-row">
+                                <div class="square"><i class="icon-area"></i> 62 m<sup>2</sup></div>
+                                <div class="room"><i class="icon-room"></i> 3 комнаты</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="300ms">
+                        <div class="card card-mod">
+                            <a href="card-flat.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">$68,000</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                            <div class="rooms-info flex-row">
+                                <div class="square"><i class="icon-area"></i> 62 m<sup>2</sup></div>
+                                <div class="room"><i class="icon-room"></i> 3 комнаты</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="200ms">
+                        <div class="card card-mod">
+                            <a href="card-flat.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">$68,000</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                            <div class="rooms-info flex-row">
+                                <div class="square"><i class="icon-area"></i> 62 m<sup>2</sup></div>
+                                <div class="room"><i class="icon-room"></i> 3 комнаты</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="100ms">
+                        <div class="card card-mod">
+                            <a href="card-flat.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">$68,000</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                            <div class="rooms-info flex-row">
+                                <div class="square"><i class="icon-area"></i> 62 m<sup>2</sup></div>
+                                <div class="room"><i class="icon-room"></i> 3 комнаты</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="100ms">
+                        <div class="card card-mod">
+                            <a href="card-flat.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">$68,000</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                            <div class="rooms-info flex-row">
+                                <div class="square"><i class="icon-area"></i> 62 m<sup>2</sup></div>
+                                <div class="room"><i class="icon-room"></i> 3 комнаты</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12 pb-20 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="200ms">
+                        <div class="card card-mod">
+                            <a href="card-flat.html">
+                                <div class="card__title">
+                                    <h3 class="title-bl">43 Жемчужина</h3>
+                                    <p>Киевский район</p>
+                                </div>
+                                <div class="card__inner">
+                                    <img src="dist/img/new-item-3.jpg" alt="">
+                                    <span class="short-info">$68,000</span>
+                                </div>
+                            </a>
+                            <div class="card-icons card-icons-width-text flex-row">
+                                <a href="favourite.html" class="fav-link">
+                                    <span class="icon-heart"></span>
+                                    <i class="add-fav">В Избранное</i>
+                                    <i class="added-fav">В Избранном</i>
+                                </a>
+                                <a href="" class="comp-link">
+                                    <span class="icon-compare"></span>
+                                    <i class="add-fav">В Сравнение</i>
+                                    <i class="added-fav">В Сравнении</i>
+                                </a>
+                            </div>
+                            <div class="rooms-info flex-row">
+                                <div class="square"><i class="icon-area"></i> 62 m<sup>2</sup></div>
+                                <div class="room"><i class="icon-room"></i> 3 комнаты</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-40">
+                    <a href="" class="btn-type btn-load-more"><i class="icon-plus"></i>Загрузить еще</a>
+                </div>
+            </form>
+        </section>
+        <section id="counts" class="section-block scroll-section">
+            <div class="row clearfix">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="text-col w-330">
+                        <h2 class="wow fadeIn" data-wow-durarion="1s">Мы - одни из лучших</h2>
+                        <p class="wow fadeInLeft" data-wow-durarion="1s" data-wow-delay="100ms">Агентство недвижимости Доминанта работает
+                            двенадцать лет на одесском рынке. 11 филиалов
+                            по всему городу, самые профессиональные
+                            сотрудники, которые в кратчайшие сроки подберут
+                            Вам лучшее решение квартирного вопроса …</p>
+                        <a href="contacts.html" class="link-to-page wow fadeIn" data-wow-durarion="1s" data-wow-delay="300ms"><i class="icon-arrow_right-long"></i>О нас</a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="row increase-section clearfix">
+                        <div class="col-sm-6 col-xs-6 p-big wow fadeInUp" data-wow-durarion="1s" data-wow-delay="100ms">
+                            <div class="block-inside">
+                                <div class="increase-number">
+                                    <div class="js-desc-number spincrement" data-to="300">0</div>
+                                    <i class="icon-plus"></i>
+                                </div>
+                            </div>
+                            <p>специалистов по недвижимости</p>
+                        </div>
+                        <div class="col-sm-6  col-xs-6 p-big wow fadeInUp" data-wow-durarion="1s" data-wow-delay="200ms">
+                            <div class="block-inside">
+                                <div class="increase-number">
+                                    <div class="js-desc-number spincrement" data-to="9000">0</div>
+                                    <i class="icon-plus"></i>
+                                </div>
+                            </div>
+                            <p>объектов в базе</p>
+                        </div>
+                    </div>
+                    <div class="row increase-section clearfix wow fadeInUp" data-wow-durarion="1s" data-wow-delay="300ms">
+                        <div class="col-sm-6  col-xs-6 p-big">
+                            <div class="block-inside">
+                                <div class="increase-number">
+                                    <div class="js-desc-number spincrement" data-to="1500">0</div>
+                                    <i class="icon-plus"></i>
+                                </div>
+                            </div>
+                            <p>сделок за год</p>
+                        </div>
+                        <div class="col-sm-6  col-xs-6 p-big wow fadeInUp" data-wow-durarion="1s" data-wow-delay="400ms">
+                            <div class="block-inside">
+                                <div class="increase-number">
+                                    <div class="js-desc-number spincrement" data-to="168">0</div>
+                                    <i class="icon-plus"></i>
+                                </div>
+                            </div>
+                            <p>новостроек</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <h2 class="text-center wow fadeIn" data-wow-durarion="1s" data-wow-delay="100ms">Как Происходит Сотрудничество</h2>
+            <div class="mid w-1100 flex-row steps">
+                <div class="col wow fadeInLeft" data-wow-durarion="1s" data-wow-delay="100ms">
+                    <div class="step-item">
+                        <div class="desc__circle" data-num="20">
+                            <div class="desc__number js-desc-number" data-count="20">1</div>
+                            <svg class="desc__progress desc__progress_sm start-value" width="90" height="90">
+                                <circle cx="45" cy="45" r="45" fill="none" stroke="#F5F4F5" stroke-width="2"></circle>
+                                <circle class="desc__value circle-bar" cx="45" cy="45" r="45" stroke="#8F2853"  stroke-width="3" fill="transparent" stroke-dasharray="283" stroke-dashoffset="0"></circle>
+                            </svg>
+                        </div>
+                        <h3>Заказ</h3>
+                        <p>Закажите звонок или
+                            оставьте заявку</p>
+                    </div>
+                </div>
+                <div class="col wow fadeInLeft" data-wow-durarion="1.2s" data-wow-delay="250ms">
+                    <div class="step-item">
+                        <div class="desc__circle" data-num="40">
+                            <div class="desc__number js-desc-number" data-count="40">2</div>
+                            <svg class="desc__progress desc__progress_sm start-value" width="90" height="90">
+                                <circle cx="45" cy="45" r="45" fill="none" stroke="#F5F4F5" stroke-width="2"></circle>
+                                <circle class="desc__value circle-bar" cx="45" cy="45" r="45" stroke="#8F2853"  stroke-width="3" fill="transparent" stroke-dasharray="283" stroke-dashoffset="0"></circle>
+                            </svg>
+                        </div>
+                        <h3>Консультация</h3>
+                        <p>Наш специалист
+                            свяжется с Вами</p>
+                    </div>
+                </div>
+                <div class="col wow fadeInLeft" data-wow-durarion="1.4s" data-wow-delay="400ms">
+                    <div class="step-item">
+                        <div class="desc__circle" data-num="60">
+                            <div class="desc__number js-desc-number" data-count="60">3</div>
+                            <svg class="desc__progress desc__progress_sm start-value" width="90" height="90">
+                                <circle cx="45" cy="45" r="45" fill="none" stroke="#F5F4F5" stroke-width="2"></circle>
+                                <circle class="desc__value circle-bar" cx="45" cy="45" r="45" stroke="#8F2853"  stroke-width="3" fill="transparent" stroke-dasharray="283" stroke-dashoffset="0"></circle>
+                            </svg>
+                        </div>
+                        <h3>Осмотр</h3>
+                        <p>Осмотр подходящей
+                            недвижимости</p>
+                    </div>
+                </div>
+                <div class="col wow fadeInLeft" data-wow-durarion="1.6s" data-wow-delay="650ms">
+                    <div class="step-item">
+                        <div class="desc__circle" data-num="80">
+                            <div class="desc__number js-desc-number" data-count="80">4</div>
+                            <svg class="desc__progress desc__progress_sm start-value" width="90" height="90">
+                                <circle cx="45" cy="45" r="45" fill="none" stroke="#F5F4F5" stroke-width="2"></circle>
+                                <circle class="desc__value circle-bar" cx="45" cy="45" r="45" stroke="#8F2853"  stroke-width="3" fill="transparent" stroke-dasharray="283" stroke-dashoffset="0"></circle>
+                            </svg>
+                        </div>
+                        <h3>Договор</h3>
+                        <p>Подготовка
+                            документации</p>
+                    </div>
+                </div>
+                <div class="col wow fadeInLeft" data-wow-durarion="1.8s" data-wow-delay="700ms">
+                    <div class="step-item">
+                        <div class="desc__circle" data-num="100">
+                            <div class="desc__number js-desc-number" data-count="100">5</div>
+                            <svg class="desc__progress desc__progress_sm start-value" width="90" height="90">
+                                <circle cx="45" cy="45" r="45" fill="none" stroke="#F5F4F5" stroke-width="2"></circle>
+                                <circle class="desc__value circle-bar" cx="45" cy="45" r="45" stroke="#8F2853"  stroke-width="3" fill="transparent" stroke-dasharray="283" stroke-dashoffset="0"></circle>
+                            </svg>
+                        </div>
+                        <h3>Результат</h3>
+                        <p>Получение ожидаемого
+                            результата</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="row clearfix">
+                <div class="col-md-3 col-xs-12">
+                    <div class="news-title">
+                        <h2 class="wow fadeInLeft" data-wow-durarion="1s" data-wow-delay="100ms">Новости</h2>
+                        <div class="pt-40 wow fadeInRight" data-wow-durarion="1s" data-wow-delay="100ms">
+                            <a href="news.html" class="link-to-page"><i class="icon-arrow_right-long"></i>Смотреть Все</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-xs-12 news">
+                    <div class="row clearfix">
+                        <div class="col-sm-4 col-xs-12 wow fadeInRight" data-wow-durarion="1.4s" data-wow-delay="400ms">
+                            <div class="news-item">
+                                <a href="news-inner.html" class="news-item__top">
+                                    <img src="dist/img/news.png" alt="">
+                                    <div class="published">
+                                        07<span>марта</span>
+                                    </div>
+                                </a>
+                                <div class="news-item__bottom">
+                                    <h3>Горячая новость!</h3>
+                                    <p>Мы создали франшизу агенства
+                                        недвижимости «Доминанта»!
+                                        и конечно продали ее первыми …</p>
+                                    <a href="news-inner.html" class="btn-type btn-load-more small"><i class="icon-plus"></i>Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 wow fadeInRight" data-wow-durarion="1.2s" data-wow-delay="250ms">
+                            <div class="news-item">
+                                <a href="news-inner.html" class="news-item__top">
+                                    <img src="dist/img/news.png" alt="">
+                                    <div class="published">
+                                        07<span>марта</span>
+                                    </div>
+                                </a>
+                                <div class="news-item__bottom">
+                                    <h3>Горячая новость!</h3>
+                                    <p>Мы создали франшизу агенства
+                                        недвижимости «Доминанта»!
+                                        и конечно продали ее первыми …</p>
+                                    <a href="news-inner.html" class="btn-type btn-load-more small"><i class="icon-plus"></i>Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 wow fadeInRight" data-wow-durarion="1s" data-wow-delay="100ms">
+                            <div class="news-item">
+                                <a href="news-inner.html" class="news-item__top">
+                                    <img src="dist/img/news.png" alt="">
+                                    <div class="published">
+                                        28<span>сентября</span>
+                                    </div>
+                                </a>
+                                <div class="news-item__bottom">
+                                    <h3>Горячая новость!</h3>
+                                    <p>Мы создали франшизу агенства
+                                        недвижимости «Доминанта»!
+                                        и конечно продали ее первыми …</p>
+                                    <a href="news-inner.html" class="btn-type btn-load-more small"><i class="icon-plus"></i>Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--<section class="subscribe section-block">-->
+        <!--<div class="container">-->
+            <!--<div class="row flex-row v-justified">-->
+                <!--<div class="col-md-5 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-durarion="1.2s" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">-->
+                    <!--<h2 class="clr-white">Подпишитесь на новости</h2>-->
+                    <!--<p class="clr-white w-350 pt-30 lh-25">Будьте всегда в курсе последних новостей и получайте эксклюзивные предложения, новинки прямо на почту</p>-->
+                <!--</div>-->
+                <!--<div class="col-md-7 col-sm-12 col-xs-12 wow fadeInRight" data-wow-durarion="1.4s" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInRight;">-->
+                    <!--<form action="">-->
+                        <!--<div class="input-row flex-row no-wrap">-->
+                            <!--<input type="email" placeholder="E-Mail">-->
+                            <!--<button type="submit" class="btn btn-bordered">-->
+                                <!--<span>-->
+                                    <!--<i class="icon-plane"></i>-->
+                                    <!--Подписаться-->
+                                <!--</span>-->
+                            <!--</button>-->
+                        <!--</div>-->
+                    <!--</form>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+    <section class="section-block section-partners">
+        <div class="container">
+            <h2 class="text-center wow low-case fadeInDown" data-wow-durarion="1s" data-wow-delay="100ms">Официальный партнер лучших новостроев города Одесса</h2>
+            <div class="partners mid wow fadeInUp" data-wow-durarion="1s" data-wow-delay="100ms">
+                <div><img src="dist/img/zars.jpg" alt=""></div>
+                <div><img src="dist/img/zolotaya.jpg" alt=""></div>
+                <div><img src="dist/img/budova.jpg" alt=""></div>
+                <div><img src="dist/img/elegia.jpg" alt=""></div>
+                <div><img src="dist/img/prime.jpg" alt=""></div>
+                <div><img src="dist/img/prime.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer container">
+            <div class="row clearfix">
+                <div class="col-sm-3 col-xs-12 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="100ms">
+                    <a href="" class="footer-logo icon-logo-header"></a>
+                </div>
+                <div class="col-sm-3 col-xs-6 footer-col footer-col__mob wow fadeInUp" data-wow-durarion="1.2s" data-wow-delay="200ms">
+                    <h3>О Компании</h3>
+                    <ul>
+                        <li><a href="contacts.html">О нас</a></li>
+                        <li><a href="career.html">Карьера</a></li>
+                        <li><a href="franchise.html">Франшиза</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-6 footer-col wow fadeInUp" data-wow-durarion="1.4s" data-wow-delay="300ms">
+                    <h3>Продажа</h3>
+                    <ul>
+                        <li><a href="card-flat.html">Вторичный рынок</a></li>
+                        <li><a href="novostroi-card.html">Новострои</a></li>
+                        <li><a href="card-house.html">Дома и дачи</a></li>
+                        <li><a href="card-land.html">Участки</a></li>
+                        <li><a href="card-house.html">Коммерческая недвижимость</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-12 footer-col wow fadeInUp" data-wow-durarion="1.6s" data-wow-delay="400ms">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><a href="">+38 048 700 66 44</a></li>
+                        <li><a href="">info@dominanta-d.com</a></li>
+                    </ul>
+                    <ul class="soc-icons flex-row">
+                        <li><a href="" class="icon-facebook"></a></li>
+                        <li><a href="" class="icon-youtube"></a></li>
+                        <li><a href="" class="icon-insta"></a></li>
+                        <li><a href="" class="icon-share"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div>2018 © АН Доминанта. Агентство недвиживости в Украине</div>
+            <a href="" class="produced">Дизайн и верстка - TINO</a>
+        </div>
+    </footer>
+    <a href="" class="call"><i class="icon-call"></i></a>
+</body>
+<script src="src/js/jquery-3.0.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js"></script>
+<script src="dist/js/react.js"></script>
+<script src="dist/js/app.min.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        jQuery('.loading').addClass('load');
+        setTimeout(function () {
+            jQuery('.preloader').fadeOut(400);
+            jQuery('body').removeClass('no-scroll');
+        },1500);
+        jQuery('.fav-link').on('click',function () {
+            jQuery(this).toggleClass('added-cart');
+            if(jQuery(this).hasClass('added-cart')) {
+                jQuery('.alert-mess').remove();
+                jQuery('body').prepend('<div class="container alert-mess"><div class=" alert-mess-inner"><i class="icon-heart"></i> <p>Объект «2345356» был добавлен в избранное. </p><a href="favourites.html">Перейти в избранное</a><a href="" class="icon-close"></a></div></div>');
+                setTimeout(function () {
+                    jQuery('.alert-mess').addClass('active');
+                },100);
+            }
+            return false;
+        });
+        jQuery('.comp-link').on('click',function () {
+            jQuery(this).toggleClass('added-cart');
+            if(jQuery(this).hasClass('added-cart')) {
+                jQuery('.alert-mess').remove();
+                jQuery('body').prepend('<div class="container alert-mess"><div class=" alert-mess-inner"><i class="icon-heart"></i> <p>Объект «2345356» был добавлен в сравнение. </p><a href="compare.html">Перейти в сравнение</a><a href="" class="icon-close"></a></div></div>');
+                setTimeout(function () {
+                    jQuery('.alert-mess').addClass('active');
+                },100);
+            }
+            return false;
+        });
+    });
+</script>
+</html>

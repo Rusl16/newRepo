@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="dist/css/app.min.css">
+    <link rel="stylesheet" href="dist/css/slider.css">
+</head>
+<body>
+    <header class="container">
+        <a  href="" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div id="menu-mob" class="mob-menu">
+            <ul class="header__bottom-left menu flex-row">
+                <li><a href="/">Главная</a></li>
+                <li><a href="catalog.html">Каталог Объектов</a></li>
+                <li><a href="novostroi.html">Новострои</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="career.html">Карьeра</a></li>
+                <li><a href="franchise.html">Франшиза</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header__bottom-right">
+                <a href="" class="hidden icon-share2"></a>
+                <ul class="soc-icons flex-row">
+                    <li><a href="" class="icon-facebook"></a></li>
+                    <li><a href="" class="icon-youtube"></a></li>
+                    <li><a href="" class="icon-insta"></a></li>
+                    <li><a href="" class="icon-share"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__top text-center">
+            <div class="header__card">
+                <ul class="card-list">
+                    <li class="favorite-card">
+                        <a href="favourites.html" class="has-val icon-">
+                            <span>Избранное - 1</span>
+                        </a>
+                    </li>
+                    <li class="compare-card">
+                        <a href="compare.html" class="icon-">
+                            <span>Сравнение - 0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="logo icon-logo-header"></a>
+            <div class="header__top-call">
+                <span>Отдел продаж</span>
+                <a href="">048 700-66-44</a>
+                <i class="icon-call"></i>
+            </div>
+        </div>
+        <div class="header__bottom flex-row v-justified">
+            <ul class="header__bottom-left menu flex-row wow fadeIn" data-wow-durarion="1.6s" data-wow-delay="100ms">
+                <li><a href="/">Главная</a></li>
+                <li><a href="catalog.html">Каталог Объектов</a></li>
+                <li><a href="novostroi.html">Новострои</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="career.html">Карьeра</a></li>
+                <li><a href="franchise.html">Франшиза</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header__bottom-right wow fadeInRight" data-wow-durarion="1s" data-wow-delay="150ms">
+                <a href="" class="hidden icon-share2"></a>
+                <ul class="soc-icons flex-row">
+                    <li><a href="" class="icon-facebook"></a></li>
+                    <li><a href="" class="icon-youtube"></a></li>
+                    <li><a href="" class="icon-insta"></a></li>
+                    <li><a href="" class="icon-share"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="section-block pb-40 hero">
+            <div class="title-row title-row-only">
+                <div class="flex-row">
+                    <h2>Сравнение<span class="title-sup filter-update">6</span></h2>
+                    <ul class="flex-row breadcrumbs">
+                        <li><a href="/">Главная</a></li>
+                        <li><span><i>/</i>Сравнение</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section-block section-compare">
+            <div class="row tabs-compare">
+                <div class="col-12">
+                    <ul class="tabs-compare-list">
+                        <li class="active">
+                            <a href="#flatID" class="tab-trigger">Квартиры</a>
+                        </li>
+                        <li>
+                            <a href="#newID" class="tab-trigger">Новострои</a>
+                        </li>
+                        <li>
+                            <a href="#earthID" class="tab-trigger">Участки</a>
+                        </li>
+                        <li>
+                            <a href="#houseID" class="tab-trigger">Дома</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-tab-compare show" id="flatID">
+                <div class="row flex-row no-wrap">
+                    <div class="col-md-3 col-sm-4 col-xs-4">
+                        <h2>Параметры сравнения</h2>
+                        <div class="filtered">
+                            <div class="filtered-item" data-filter="remove-all">
+                                <span>Очистить все</span>
+                                <a href="" class="icon-close filter-close"></a>
+                            </div>
+                        </div>
+                        <div class="tab-compare">
+                            <ul class="flex-row w-500 mid">
+                                <li class="active">Все Параметры</li>
+                                <li class="diff">Только Отличия</li>
+                                <hr>
+                            </ul>
+                        </div>
+                        <div class="params__wrap">
+                            <div class="params params-left">
+                                Область
+                            </div>
+                            <div class="params params-left">
+                                Населенный пункт
+                            </div>
+                            <div class="params params-left">
+                                Район города
+                            </div>
+                            <div class="params params-left">
+                                Улица
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Цена
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Количество комнат
+                            </div>
+                            <div class="params params-left">
+                                Код объекта
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Этаж
+                            </div>
+                            <div class="params params-left">
+                                Этажность
+                            </div>
+                            <div class="params params-left">
+                                Окна
+                            </div>
+                            <div class="params params-left">
+                                Высота потолков
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Общая площадь
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Жилая площадь
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Кухня
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-8 col-xs-8">
+                        <div class="compare-col">
+                            <div class="compare">
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-tab-compare" id="newID">
+                <div class="row flex-row no-wrap">
+                    <div class="col-md-3 col-sm-4 col-xs-4">
+                        <h2>Параметры сравнения</h2>
+                        <div class="filtered">
+                            <div class="filtered-item" data-filter="remove-all">
+                                <span>Очистить все</span>
+                                <a href="" class="icon-close filter-close"></a>
+                            </div>
+                        </div>
+                        <div class="tab-compare">
+                            <ul class="flex-row w-500 mid">
+                                <li class="active">Все Параметры</li>
+                                <li class="diff">Только Отличия</li>
+                                <hr>
+                            </ul>
+                        </div>
+                        <div class="params__wrap">
+                            <div class="params params-left">
+                                Область
+                            </div>
+                            <div class="params params-left">
+                                Населенный пункт
+                            </div>
+                            <div class="params params-left">
+                                Район города1
+                            </div>
+                            <div class="params params-left">
+                                Улица
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Цена2
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Количество комнат3
+                            </div>
+                            <div class="params params-left">
+                                Код объекта
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Этаж
+                            </div>
+                            <div class="params params-left">
+                                Этажность
+                            </div>
+                            <div class="params params-left">
+                                Окна
+                            </div>
+                            <div class="params params-left">
+                                Высота потолков
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Общая площадь
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Жилая площадь
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Кухня
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-8 col-xs-8">
+                        <div class="compare-col">
+                            <div class="compare">
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-tab-compare" id="earthID">
+                <div class="row flex-row no-wrap">
+                    <div class="col-md-3 col-sm-4 col-xs-4">
+                        <h2>Параметры сравнения</h2>
+                        <div class="filtered">
+                            <div class="filtered-item" data-filter="remove-all">
+                                <span>Очистить все</span>
+                                <a href="" class="icon-close filter-close"></a>
+                            </div>
+                        </div>
+                        <div class="tab-compare">
+                            <ul class="flex-row w-500 mid">
+                                <li class="active">Все Параметры</li>
+                                <li class="diff">Только Отличия</li>
+                                <hr>
+                            </ul>
+                        </div>
+                        <div class="params__wrap">
+                            <div class="params params-left">
+                                Область
+                            </div>
+                            <div class="params params-left">
+                                Населенный пункт
+                            </div>
+                            <div class="params params-left">
+                                Район города1
+                            </div>
+                            <div class="params params-left">
+                                Улица
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Цена2
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Количество комнат3
+                            </div>
+                            <div class="params params-left">
+                                Код объекта
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Этаж
+                            </div>
+                            <div class="params params-left">
+                                Этажность
+                            </div>
+                            <div class="params params-left">
+                                Окна
+                            </div>
+                            <div class="params params-left">
+                                Высота потолков
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Общая площадь
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Жилая площадь
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Кухня
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-8 col-xs-8">
+                        <div class="compare-col">
+                            <div class="compare">
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-tab-compare" id="houseID">
+                <div class="row flex-row no-wrap">
+                    <div class="col-md-3 col-sm-4 col-xs-4">
+                        <h2>Параметры сравнения</h2>
+                        <div class="filtered">
+                            <div class="filtered-item" data-filter="remove-all">
+                                <span>Очистить все</span>
+                                <a href="" class="icon-close filter-close"></a>
+                            </div>
+                        </div>
+                        <div class="tab-compare">
+                            <ul class="flex-row w-500 mid">
+                                <li class="active">Все Параметры</li>
+                                <li class="diff">Только Отличия</li>
+                                <hr>
+                            </ul>
+                        </div>
+                        <div class="params__wrap">
+                            <div class="params params-left">
+                                Область
+                            </div>
+                            <div class="params params-left">
+                                Населенный пункт
+                            </div>
+                            <div class="params params-left">
+                                Район города1
+                            </div>
+                            <div class="params params-left">
+                                Улица
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Цена2
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Количество комнат3
+                            </div>
+                            <div class="params params-left">
+                                Код объекта
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Этаж
+                            </div>
+                            <div class="params params-left">
+                                Этажность
+                            </div>
+                            <div class="params params-left">
+                                Окна
+                            </div>
+                            <div class="params params-left">
+                                Высота потолков
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Общая площадь
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Жилая площадь
+                            </div>
+                            <div class="params params-left" data-compare="different">
+                                Кухня
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-8 col-xs-8">
+                        <div class="compare-col">
+                            <div class="compare">
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="compare-item" data-filter="remove-all">
+                                    <div class="img">
+                                        <img src="dist/img/apart-1.jpg" alt="">
+                                        <div class="card-icons flex-row">
+                                            <a href="" class="icon-heart"></a>
+                                        </div>
+                                        <a href="" class="icon-close"></a>
+                                    </div>
+                                    <div class="params__wrap">
+                                        <div class="params params-right">
+                                            Одесская
+                                        </div>
+                                        <div class="params params-right">
+                                            Одесса
+                                        </div>
+                                        <div class="params params-right">
+                                            Приморский
+                                        </div>
+                                        <div class="params params-right">
+                                            Маразлиевская
+                                        </div>
+                                        <div class="params params-right red-mod" data-compare="different">
+                                            $78,150
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            254367
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            3
+                                        </div>
+                                        <div class="params params-right">
+                                            24
+                                        </div>
+                                        <div class="params params-right">
+                                            Металлопластиковые
+                                        </div>
+                                        <div class="params params-right">
+                                            2.7 м
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            72 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            57 м2
+                                        </div>
+                                        <div class="params params-right" data-compare="different">
+                                            15 м2
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="section-block section-partners pb-120">
+        <div class="container">
+            <h2 class="text-center low-case wow fadeInDown" data-wow-durarion="1s" data-wow-delay="100ms">Официальный партнер лучших новостроев города Одесса</h2>
+            <div class="partners mid wow fadeInUp" data-wow-durarion="1s" data-wow-delay="100ms">
+                <div><img src="dist/img/zars.jpg" alt=""></div>
+                <div><img src="dist/img/zolotaya.jpg" alt=""></div>
+                <div><img src="dist/img/budova.jpg" alt=""></div>
+                <div><img src="dist/img/elegia.jpg" alt=""></div>
+                <div><img src="dist/img/prime.jpg" alt=""></div>
+                <div><img src="dist/img/prime.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer container">
+            <div class="row clearfix">
+                <div class="col-sm-3 col-xs-12 wow fadeInUp" data-wow-durarion="1s" data-wow-delay="100ms">
+                    <a href="" class="footer-logo icon-logo-header"></a>
+                </div>
+                <div class="col-sm-3 col-xs-6 footer-col footer-col__mob wow fadeInUp" data-wow-durarion="1.2s" data-wow-delay="200ms">
+                    <h3>О Компании</h3>
+                    <ul>
+                        <li><a href="contacts.html">О нас</a></li>
+                        <li><a href="career.html">Карьера</a></li>
+                        <li><a href="franchise.html">Франшиза</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-6 footer-col wow fadeInUp" data-wow-durarion="1.4s" data-wow-delay="300ms">
+                    <h3>Продажа</h3>
+                    <ul>
+                        <li><a href="catalog.html">Вторичный рынок</a></li>
+                        <li><a href="novostroi.html">Новострои</a></li>
+                        <li><a href="card-house.html">Дома и дачи</a></li>
+                        <li><a href="card-land.html">Участки</a></li>
+                        <li><a href="">Коммерческая недвижимость</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-12 footer-col wow fadeInUp" data-wow-durarion="1.6s" data-wow-delay="400ms">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><a href="">+38 048 700 66 44</a></li>
+                        <li><a href="">info@dominanta-d.com</a></li>
+                    </ul>
+                    <ul class="soc-icons flex-row">
+                        <li><a href="" class="icon-facebook"></a></li>
+                        <li><a href="" class="icon-youtube"></a></li>
+                        <li><a href="" class="icon-insta"></a></li>
+                        <li><a href="" class="icon-share"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div>2018 © АН Доминанта. Агентство недвиживости в Украине</div>
+            <a href="" class="produced">Дизайн и верстка - TINO</a>
+        </div>
+    </footer>
+    <a href="" class="call"><i class="icon-call"></i></a>
+</body>
+
+<script src="src/js/jquery-3.0.0.min.js"></script>
+<script src="dist/js/app.min.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        jQuery('.tab-trigger').on('click',function () {
+            var id_tabs = jQuery(this).attr('href');
+            jQuery('.content-tab-compare').hide();
+            jQuery(id_tabs).show();
+            jQuery('.tab-trigger').parent().removeClass('active')
+            jQuery(this).parent().addClass('active');
+            return false;
+        });
+    });
+</script>
+</html>

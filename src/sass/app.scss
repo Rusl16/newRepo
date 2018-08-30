@@ -1,0 +1,44 @@
+/* global */
+@import "default/_fonts";
+@import "default/_variables";
+@import "default/_global";
+@import "default/_grid";
+@import "default/_animate";
+
+/* atoms */
+@import "default/components/atoms/_input";
+@import "default/components/atoms/_button";
+@import "default/components/atoms/_slider";
+@import "default/components/atoms/_pagination";
+@import "default/components/atoms/_map";
+@import "default/components/atoms/_breadcrumbs";
+@import "default/components/atoms/_video";
+@import "default/components/atoms/_rieltor";
+@import "default/components/atoms/_list-section";
+@import "default/components/atoms/_filtered";
+@import "default/components/atoms/_courses";
+@import "default/components/atoms/_params";
+
+/* molecules */
+@import "default/components/molecules/_bootstrap-select";
+@import "default/components/molecules/_block";
+@import "default/components/molecules/_section";
+@import "default/components/molecules/_card";
+@import "default/components/molecules/_bootstrap-range";
+@import "default/components/molecules/_news";
+@import "default/components/molecules/_filter";
+@import "default/components/molecules/_subscribe";
+@import "default/components/molecules/_vacancy";
+@import "default/components/molecules/_modal";
+@import "default/components/molecules/_fancy";
+
+/* organisms */
+@import "default/components/organisms/_header";
+@import "default/components/organisms/_footer";
+@import "default/components/organisms/_slick";
+@import "default/components/organisms/_hero";
+@import "default/components/organisms/_main";
+@import "default/components/organisms/_swiper";
+@import "default/components/organisms/_catalog";
+@import "default/components/organisms/_contact";
+

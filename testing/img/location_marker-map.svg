@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="73px" viewBox="0 0 55 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>location_marker-map</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M39.1400178,12.4116488 L39.1400178,12.4116488 C53.0050592,11.5520691 65.1866125,21.5309224 67.0732006,35.2938812 L72.023495,71.4070613 L35.910315,66.4567669 C22.1473562,64.5701787 12.1685029,52.3886255 13.0280826,38.5235841 L13.0280826,38.5235841 C13.8988043,24.4788208 25.0952546,13.2823705 39.1400178,12.4116488 Z" id="path-1"></path>
+        <path d="M42,82.9772411 L42,11.6857789 C48.7610613,11.5650951 55.5572375,13.8924713 60.9639265,18.6679074 C71.3758059,27.8641576 72.93335,43.5339313 64.5354878,54.5998321 L42.5,83.6360933 L42,82.9772411 Z" id="path-3"></path>
+    </defs>
+    <g id="Card" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dominanta-Filial" transform="translate(-1096.000000, -505.000000)">
+            <g id="map" transform="translate(929.000000, 334.000000)">
+                <g id="Bitmap">
+                    <g id="location_marker-map" transform="translate(152.000000, 160.000000)">
+                        <g id="Combined-Shape">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#8F2853" transform="translate(42.500000, 41.883566) rotate(-315.000000) translate(-42.500000, -41.883566) " xlink:href="#path-1"></use>
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use fill="#D11A5F" xlink:href="#path-3"></use>
+                        </g>
+                        <circle id="Oval" fill="#FFFFFF" cx="43" cy="38" r="10"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
